@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Revista Comercial Elegante</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos globales */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Roboto', sans-serif;
+            color: #1a1a1a;
+        }
+
+        a {
+            text-decoration: none;
+            color: #1a73e8;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        /* Cabecera */
+        header {
+            background-color: #1a73e8;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        /* Barra de navegación */
+        nav {
+            background-color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: -5px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            font-weight: 600;
+            color: #333;
+            text-transform: uppercase;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #1a73e8;
+        }
+
+        /* Sección principal */
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .article {
+            width: 65%;
+        }
+
+        .sidebar {
+            width: 30%;
+        }
+
+        .article h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .article p {
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+
+        /* Artículos destacados */
+        .article img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .sidebar .widget {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .widget h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .widget ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .widget ul li {
+            margin-bottom: 15px;
+        }
+
+        .widget ul li a {
+            font-size: 1.1rem;
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        .widget ul li a:hover {
+            color: #1a73e8;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 1rem;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>
+        <div class="container">
+            <h1>Revista Comercial</h1>
+            <p>Noticias, productos y servicios para tu negocio</p>
+        </div>
+    </header>
+
+    <!-- Navegación -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container main-content">
+        <!-- Artículo principal -->
+        <div class="article">
+            <h2>El Futuro de la Tecnología en el Mundo Empresarial</h2>
+            <p>La tecnología está revolucionando todos los sectores comerciales. En este artículo, exploramos las tendencias tecnológicas que marcarán el futuro del mundo empresarial, desde la inteligencia artificial hasta la automatización de procesos. La implementación de estas tecnologías puede ser el factor diferenciador para las empresas que busquen mantenerse competitivas en el mercado global...</p>
+            <img src="https://via.placeholder.com/800x400" alt="Tecnología Empresarial">
+        </div>
+
+        <!-- Barra lateral -->
+        <div class="sidebar">
+            <div class="widget">
+                <h3>Artículos Destacados</h3>
+                <ul>
+                    <li><a href="#">Las mejores estrategias de marketing digital para 2024</a></li>
+                    <li><a href="#">Cómo mejorar la productividad con software empresarial</a></li>
+                    <li><a href="#">Casos de éxito de empresas que implementaron IA</a></li>
+                </ul>
+            </div>
+
+            <div class="widget">
+                <h3>Últimos Productos</h3>
+                <ul>
+                    <li><a href="#">Sistema de gestión empresarial X</a></li>
+                    <li><a href="#">Herramientas de colaboración en línea Y</a></li>
+                    <li><a href="#">Soluciones de CRM Z</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Revista Comercial. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
